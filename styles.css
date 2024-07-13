@@ -23,7 +23,7 @@
     background-color: var(--neutral-eggshell);
     font-family: "Outfit", sans-serif;
     font-style: normal;
-    
+    padding: 3rem 0;
 }
 
 .card{
@@ -49,6 +49,7 @@ h1,h2{
 
 h1{
     font-size: 36px;
+    margin-top:2rem;
 }
 
 section{
@@ -105,14 +106,33 @@ tr > td:last-child{
 
 tr:first-child {
     border-top: none;
-  }
-  tr:last-child {
-    border-bottom: none;
-  }
+}
+tr:last-child {
+  border-bottom: none;
+}
 
-  td{
-    padding: 1rem;
-  }
+td{
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        padding:0
+    }
+    .card{
+        width: 100%;
+        padding: 0;
+    }
+    main{
+        padding: 2rem
+    }
+    .img-div img{
+        border-radius: 0;
+    }
+    h1{
+        margin-top:0
+    }
+}
 
 
   
